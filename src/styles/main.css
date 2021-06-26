@@ -1,0 +1,48 @@
+html {
+  overflow: hidden auto;
+}
+body {
+  color: #fff;
+  background-color: #444;
+}
+
+h2 {
+  text-shadow: 0 5px 4px #222;
+}
+
+.main {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.profile {
+  width: 200px;
+  height: 200px;
+}
+
+.profile img {
+  width: 100%;
+  border-radius: 100%;
+  border: solid 1px #ccc;
+}
+
+button {
+  background-color: #00aba9;
+  width: 75px;
+  height: 45px;
+  border-radius: 5%;
+  border: solid 1px #000;
+  cursor: pointer;
+}
+
+.icon-hello {
+  background-image: svg-load('../assets/images/icon-hello.svg', fill=#fff);
+  background-size: 36px 36px;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  margin: auto 5px;
+}

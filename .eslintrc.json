@@ -1,0 +1,58 @@
+{
+  "ignorePatterns": ["dist", "node_modules"],
+  "rules": {
+    "max-len": [
+      "error",
+      {
+        "ignoreUrls": true,
+        "code": 80
+      }
+    ],
+    "prefer-template": "off",
+    "indent": ["error", 2],
+    "object-curly-spacing": "warn",
+    "no-multiple-empty-lines": [
+      1,
+      {
+        "max": 1,
+        "maxEOF": 1
+      }
+    ],
+    "no-var": "warn",
+    "camelcase": "warn",
+    "no-new-wrappers": "warn",
+    "no-nested-ternary": "warn",
+    "no-console": "off",
+    "no-template-curly-in-string": "warn",
+    "no-self-compare": "warn",
+    "import/prefer-default-export": "off",
+    "func-names": ["warn", "as-needed"],
+    "arrow-body-style": "warn",
+    "semi": ["warn", "always"],
+    "import/no-extraneous-dependencies": ["off", { "devDependencies": false }]
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["eslint:recommended", "airbnb-base", "plugin:prettier/recommended"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["typescript", "prettier"],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "config/webpack.base.config.babel.js"
+      },
+      "node": {
+        "extensions": [".ts", ".tsx", ".js", ".jsx"]
+      }
+    }
+  }
+}
