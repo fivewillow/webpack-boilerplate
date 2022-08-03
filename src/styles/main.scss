@@ -1,13 +1,19 @@
+$primary-color: #fff;
+$primary-bg-color: #444;
+$secondary-color: #222;
+$thidr-color: #ccc;
+$fourth-color: #00aba9;
+
 html {
   overflow: hidden auto;
 }
 body {
-  color: #fff;
-  background-color: #444;
+  color: $primary-color;
+  background-color: $primary-bg-color;
 }
 
 h2 {
-  text-shadow: 0 5px 4px #222;
+  text-shadow: 0 5px 4px $secondary-color;
 }
 
 .main {
@@ -26,20 +32,23 @@ h2 {
 .profile img {
   width: 100%;
   border-radius: 100%;
-  border: solid 1px #ccc;
+  border: solid 1px $thidr-color;
 }
 
 button {
-  background-color: #00aba9;
+  background-color: $fourth-color;
   width: 75px;
   height: 45px;
   border-radius: 5%;
-  border: solid 1px #000;
+  border: solid 1px $secondary-color;
   cursor: pointer;
 }
 
 .icon-hello {
-  background-image: svg-load('../assets/images/icon-hello.svg', fill=#fff);
+  background-image: svg-load(
+    '../assets/images/icon-hello.svg',
+    fill=$thidr-color
+  );
   background-size: 36px 36px;
   width: 36px;
   height: 36px;

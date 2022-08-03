@@ -15,7 +15,7 @@ module.exports = merge(baseConfig, {
     rules: [
       // Styles: Inject CSS into the head with source maps
       {
-        test: /\.css$/,
+        test: /\.s[ac]ss$/,
         use: [
           'style-loader',
           {
@@ -23,6 +23,7 @@ module.exports = merge(baseConfig, {
             options: { sourceMap: true },
           },
           { loader: 'postcss-loader', options: { sourceMap: true } },
+          'sass-loader',
         ],
       },
     ],

@@ -17,11 +17,12 @@ module.exports = merge(baseConfig, {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.s[ac]ss$/,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
           'postcss-loader',
+          'sass-loader',
         ],
       },
     ],
