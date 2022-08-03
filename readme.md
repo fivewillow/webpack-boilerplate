@@ -34,3 +34,14 @@ npm run dev
 npm run prod
 ```
 
+### Type-checking the repo
+
+```bash
+npm run type-check
+```
+
+And to run in `--watch` mode:
+
+```bash
+npm run type-check:watch
+```

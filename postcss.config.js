@@ -1,6 +1,3 @@
 module.exports = {
-  plugins: [
-    'postcss-preset-env',
-    'postcss-inline-svg'
-  ],
+  plugins: ['postcss-preset-env', 'postcss-inline-svg'],
 };
